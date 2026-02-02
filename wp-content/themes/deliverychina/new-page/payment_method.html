@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/lightgallery.min.css">
+	<link rel="stylesheet" href="css/selectric.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="menu_responsive__container">
+			
+		</div>
+		<header>
+			<div class="container">
+				<a href="" class="logo">
+					<img src="img/logo.png" alt="">
+				</a>
+				<button class="mob_menu__button">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<div class="change_city">
+					<a href="" class="active_city">
+						<i class="marker">
+							<svg aria-hidden="true" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12 fa-2x"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg>
+						</i>
+						<span>Санкт-Петербург</span>
+						<i class="arrow_down">
+							<svg aria-hidden="true" data-prefix="fas" data-icon="caret-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-caret-down fa-w-10 fa-2x"><path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" class=""></path></svg>
+						</i>
+					</a>
+					<ul class="city_ul">
+						<li>
+							<a href="">
+								Санкт-Петербург1
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Санкт-Петербург2
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Санкт-Петербург3
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Санкт-Петербург4
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="work_time">
+					<span>График работы:</span>
+					<p>9:00 – 18:00 ( Пн – Пт )</p>
+				</div>
+				<div class="call_cont">
+					<a href="" class="active_call">8-800-555-82-67</a>
+					<i class="arrow_down">
+						<svg aria-hidden="true" data-prefix="fas" data-icon="caret-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-caret-down fa-w-10 fa-2x"><path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" class=""></path></svg>
+					</i>
+					<ul class="call_ul">
+						<li>
+							<span class="span--modified">Колл Центр</span>
+						</li>
+						<li>
+							<a href="">8-800-555-82-67
+							<p>бесплатно для России</p></a>
+							
+						</li>
+						<li>
+							
+							<a href="">
+								<p>Москва</p>
+							8-499-322-44-18</a>
+						</li>
+						<li>
+							
+							<a href="">
+								<p>Санкт-Петербург</p>
+							8-812-748-23-78</a>
+						</li>
+						<li>
+							
+							<a href="">
+								<p>Новосибирск</p>
+							8-383-207-57-56</a>
+						</li>
+					</ul>
+					<p>Звонок по России бесплатный</p>
+				</div>
+				<div class="tel_cont">
+					<a href="">
+						<svg aria-hidden="true" data-prefix="fas" data-icon="phone-volume" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-phone-volume fa-w-12 fa-2x"><path fill="currentColor" d="M97.333 506.966c-129.874-129.874-129.681-340.252 0-469.933 5.698-5.698 14.527-6.632 21.263-2.422l64.817 40.513a17.187 17.187 0 0 1 6.849 20.958l-32.408 81.021a17.188 17.188 0 0 1-17.669 10.719l-55.81-5.58c-21.051 58.261-20.612 122.471 0 179.515l55.811-5.581a17.188 17.188 0 0 1 17.669 10.719l32.408 81.022a17.188 17.188 0 0 1-6.849 20.958l-64.817 40.513a17.19 17.19 0 0 1-21.264-2.422zM247.126 95.473c11.832 20.047 11.832 45.008 0 65.055-3.95 6.693-13.108 7.959-18.718 2.581l-5.975-5.726c-3.911-3.748-4.793-9.622-2.261-14.41a32.063 32.063 0 0 0 0-29.945c-2.533-4.788-1.65-10.662 2.261-14.41l5.975-5.726c5.61-5.378 14.768-4.112 18.718 2.581zm91.787-91.187c60.14 71.604 60.092 175.882 0 247.428-4.474 5.327-12.53 5.746-17.552.933l-5.798-5.557c-4.56-4.371-4.977-11.529-.93-16.379 49.687-59.538 49.646-145.933 0-205.422-4.047-4.85-3.631-12.008.93-16.379l5.798-5.557c5.022-4.813 13.078-4.394 17.552.933zm-45.972 44.941c36.05 46.322 36.108 111.149 0 157.546-4.39 5.641-12.697 6.251-17.856 1.304l-5.818-5.579c-4.4-4.219-4.998-11.095-1.285-15.931 26.536-34.564 26.534-82.572 0-117.134-3.713-4.836-3.115-11.711 1.285-15.931l5.818-5.579c5.159-4.947 13.466-4.337 17.856 1.304z" class=""></path></svg>
+					</a>
+				</div>
+				<div class="shop_basket">
+					<a href="">
+						<svg aria-hidden="true" data-prefix="fas" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-shopping-cart fa-w-18 fa-2x"><path fill="currentColor" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z" class=""></path></svg>
+					</a>
+				</div>
+				<div class="search_cont">
+					<a href="">
+						<svg aria-hidden="true" data-prefix="fal" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-search fa-w-16 fa-2x"><path fill="currentColor" d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z" class=""></path></svg>
+					</a>
+				</div>
+			</div>
+			<div class="header__inside_cont">
+				<div class="container">
+					<ul class="menu_dropdown">
+						<li>
+							<a href="">
+								Светодиодное освещение
+								<i><svg aria-hidden="true" data-prefix="fal" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512" class="svg-inline--fa fa-angle-right fa-w-6 fa-2x"><path fill="currentColor" d="M166.9 264.5l-117.8 116c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L127.3 256 25.1 155.6c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l117.8 116c4.6 4.7 4.6 12.3-.1 17z" class=""></path></svg></i>
+							</a>
+							<ul class="menu_dropdown--inside">
+								<li>
+									<a href="">
+										<figure>
+											<img src="img/menu_drop_icon1.png" alt="">
+										</figure>
+										<span>Встраиваемые<br> светильники</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<figure>
+											<img src="img/menu_drop_icon2.png" alt="">
+										</figure>
+										<span>Светодиодные<br> прожекторы</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<figure>
+											<img src="img/menu_drop_icon3.png" alt="">
+										</figure>
+										<span>Светодиодные<br> панели</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<figure>
+											<img src="img/menu_drop_icon4.png" alt="">
+										</figure>
+										<span>Подвесные<br> светильники</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<figure>
+											<img src="img/menu_drop_icon5.png" alt="">
+										</figure>
+										<span>Настенные<br> светильники</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<figure>
+											<img src="img/menu_drop_icon6.png" alt="">
+										</figure>
+										<span>Светодиодные<br> лампы</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<figure>
+											<img src="img/menu_drop_icon7.png" alt="">
+										</figure>
+										<span>Линейные<br> светильники</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<figure>
+											<img src="img/menu_drop_icon8.png" alt="">
+										</figure>
+										<span>Светодиодные<br> модули</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="">
+								Декоративное освещение
+								<i><svg aria-hidden="true" data-prefix="fal" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512" class="svg-inline--fa fa-angle-right fa-w-6 fa-2x"><path fill="currentColor" d="M166.9 264.5l-117.8 116c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L127.3 256 25.1 155.6c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l117.8 116c4.6 4.7 4.6 12.3-.1 17z" class=""></path></svg></i>
+							</a>
+							<ul class="menu_dropdown--inside">
+								<li>
+									<a href="">
+										<figure>
+											<img src="img/menu_drop_icon1.png" alt="">
+										</figure>
+										<span>Встраиваемые<br> светильники</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<figure>
+											<img src="img/menu_drop_icon2.png" alt="">
+										</figure>
+										<span>Светодиодные<br> прожекторы</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<figure>
+											<img src="img/menu_drop_icon3.png" alt="">
+										</figure>
+										<span>Светодиодные<br> панели</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<figure>
+											<img src="img/menu_drop_icon4.png" alt="">
+										</figure>
+										<span>Подвесные<br> светильники</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<figure>
+											<img src="img/menu_drop_icon5.png" alt="">
+										</figure>
+										<span>Настенные<br> светильники</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<figure>
+											<img src="img/menu_drop_icon6.png" alt="">
+										</figure>
+										<span>Светодиодные<br> лампы</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<figure>
+											<img src="img/menu_drop_icon7.png" alt="">
+										</figure>
+										<span>Линейные<br> светильники</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<figure>
+											<img src="img/menu_drop_icon8.png" alt="">
+										</figure>
+										<span>Светодиодные<br> модули</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="navigation">
+						<li class="active_page">
+							<a href="">Главная</a>
+						</li>
+						<li>
+							<a href="">О компании</a>
+						</li>
+						<li>
+							<a href="">Дилерам</a>
+						</li>
+						<li>
+							<a href="">Доставка</a>
+						</li>
+						<li>
+							<a href="">Услуги</a>
+						</li>
+						<li>
+							<a href="">Цены</a>
+						</li>
+						<li>
+							<a href="">Контакты</a>
+						</li>
+						<li>
+							<a href="">Новости</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="m__services">
+				<div class="container">
+					<div class="payment_wrapper">
+						<div class="faq_container">
+							<span class="top_main__title">Методы оплаты</span>
+							<div class="payment_cont">
+								<span class="title">Безналичный расчет</span>
+								<span class="reg">Банковской картой</span>
+								<p>Neon is a suite of developer tools that speed up the process of creating new and custom blockchains and apps. Lamden is a suite of developer tools that speed up the process of creating new and custom blockchains and apps.</p>
+								<span class="reg">Банковской картой</span>
+								<p>Neon is a suite of developer tools that speed up the process of creating new and custom blockchains and apps. Lamden is a suite of developer tools that speed up the process of creating new and custom blockchains and apps.</p>
+								<span class="title">Наличный расчет</span>
+								<span class="reg">Банковской картой</span>
+								<p>Neon is a suite of developer tools that speed up the process of creating new and custom blockchains and apps. Lamden is a suite of developer tools that speed up the process of creating new and custom blockchains and apps.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="container footer_cont1">
+				<div class="foot_cont foot_cont1">
+					<div class="logo_foot">
+						<a href="">
+							<img src="img/logo2.png" alt="">
+						</a>
+					</div>
+					<p>Официальный дилер завода <br>Neo-Neon Holdings Limited.</p>
+					<ul>
+						<li class="red">График работы</li>
+						<li>9:00 - 18:00 (Пн-Пт)</li>
+					</ul>
+				</div>
+				<div class="foot_cont">
+					<ul>
+						<li class="red">Карта Сайта</li>
+						<li>
+							<a href="">Главная</a>
+						</li>
+						<li>
+							<a href="">О компании</a>
+						</li>
+						<li>
+							<a href="">Дилерам</a>
+						</li>
+						<li>
+							<a href="">Доставка</a>
+						</li>
+						<li>
+							<a href="">Услуги</a>
+						</li>
+						<li>
+							<a href="">Цены</a>
+						</li>
+						<li>
+							<a href="">Контакты</a>
+						</li>
+						<li>
+							<a href="">Новости</a>
+						</li>
+					</ul>
+				</div>
+				<div class="foot_cont foot_cont3">
+					<ul>
+						<li class="red">Телефоны</li>
+						<li>8-800-555-82-67 (бесплатно по России)</li>
+						<li>8-383-207-57-56 (Новосибирск)</li>
+						<li>8-499-322-44-18 (Москва)</li>
+						<li>8-812-748-23-78 (Санкт-Петербург)</li>
+					</ul>
+				</div>
+				<div class="foot_cont">
+					<ul>
+						<li class="red">Мы в сети</li>
+						<li>
+							<a href="">Linkedin</a>
+						</li>
+						<li>
+							<a href="">Facebook</a>
+						</li>
+						<li>
+							<a href="">Vkontakte</a>
+						</li>
+						<li>
+							<a href="">Skype</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container footer_cont2">
+				<p>© 2017 Официальный представител NeoNeon Holdings LTD. Все права защищены.</p>
+				<span>created by
+					<a href="">zipl</a>
+				</span>
+			</div>
+		</footer>
+	</div>
+
+	<div class="preloader">
+		<div class="group">
+			<div class="bigSqr">
+				<div class="square first"></div>
+			    <div class="square second"></div>
+			    <div class="square third"></div>
+			    <div class="square fourth"></div>
+			</div>
+			  <p class="text">Загрузка</p>
+		</div> 
+	</div>
+	
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery.selectric.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/lightgallery.min.js"></script>
+<script src="js/jquery.mask.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

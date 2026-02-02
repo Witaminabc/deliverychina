@@ -1,0 +1,64 @@
+{
+    "name": "deliverychina/wordpress",
+    "description": "WordPress сайт с управлением плагинами через Composer",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "deliverychina",
+            "email": "deliverychina@mail.ru"
+        }
+    ],
+    "repositories":[
+        {
+            "name": "wpackagist",
+            "type": "composer",
+            "url": "https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*",
+                "wpackagist-theme/*"
+            ]
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "johnpbloch/wordpress": "^6.0",
+        "composer/installers": "^2.0"
+
+
+    },
+    "require-dev": {
+        "wp-cli/wp-cli": "^2.8"
+    },
+    "extra": {
+        "installer-paths": {
+            "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "wp-content/themes/{$name}/": ["type:wordpress-theme"],
+            "wp-content/mu-plugins/{$name}/": ["type:wordpress-mu-plugin"]
+        },
+        "wordpress-install-dir": "wp"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "johnpbloch/wordpress-core-installer": true
+        },
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "platform-check": false
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "echo 'Установка завершена!'"
+        ],
+        "post-update-cmd": [
+            "echo 'Обновление завершено!'"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "GoldTeamMinsk\\": "app/"
+        }
+    }
+}
